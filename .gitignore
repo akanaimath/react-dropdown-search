@@ -1,0 +1,7 @@
+*.log
+yarn.lock
+yarn-error.log
+build/*
+.settings/*
+node_modules/*
+package-json.lock

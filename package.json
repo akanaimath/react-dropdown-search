@@ -1,0 +1,55 @@
+{
+  "name": "react-dropdown-search",
+  "version": "1.0.0",
+  "description": "React dropdown search, multiselect or single select",
+  "main": "build/index.js",
+  "scripts": {
+    "build": "babel --source-maps inline src --out-dir build --minified --compact true --retain-lines",
+    "watch": "rm -f build/*.js build/*.map && babel --source-maps inline src --out-dir build --minified --compact true --retain-lines --watch ",
+    "demo": "NODE_ENV=development webpack -d --watch",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akanaimath/react-dropdown-search.git"
+  },
+  "files": [
+    "build/",
+    "src/DropdownSearch.css"
+  ],
+  "keywords": [
+    "react",
+    "dropdown",
+    "multiselect",
+    "multiselectsearch",
+    "singleselect"
+  ],
+  "author": "Naimath",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akanaimath/react-dropdown-search/issues"
+  },
+  "homepage": "https://github.com/akanaimath/react-dropdown-search#readme",
+  "dependencies": {
+    "react": "16.x",
+    "react-dom": "^16.8.1",
+    "react-utility": "^1.0.10"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.5",
+    "babel-plugin-minify-dead-code-elimination": "^0.5.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "css-loader": "^2.1.0",
+    "mocha": "4.x",
+    "style-loader": "^0.23.1",
+    "unit.js": "2.x",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.29.3"
+  }
+}

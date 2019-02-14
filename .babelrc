@@ -1,0 +1,11 @@
+{
+    "compact" : true,
+    "presets" : [ 
+        ["env", {}],
+        ["react"]
+    ],
+    "plugins" : [
+        "babel-plugin-transform-react-jsx",
+        "transform-class-properties"
+    ]
+}
