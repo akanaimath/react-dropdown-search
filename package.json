@@ -1,12 +1,12 @@
 {
   "name": "react-dropdown-search",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "React dropdown search, multiselect or single select",
   "main": "build/index.js",
   "scripts": {
     "build": "babel --source-maps inline src --out-dir build --minified --compact true --retain-lines",
     "watch": "rm -f build/*.js build/*.map && babel --source-maps inline src --out-dir build --minified --compact true --retain-lines --watch ",
-    "demo": "NODE_ENV=development webpack -d --watch",
+    "demo": "webpack -d --watch",
     "prepublish": "npm run build"
   },
   "repository": {
@@ -24,7 +24,7 @@
     "multiselectsearch",
     "singleselect"
   ],
-  "author": "Naimath",
+  "author": "akanaimath",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/akanaimath/react-dropdown-search/issues"
@@ -36,20 +36,21 @@
     "react-utility": "^1.0.10"
   },
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.5",
-    "babel-plugin-minify-dead-code-elimination": "^0.5.0",
-    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-cli": "6.x",
+    "babel-core": "6.x",
+    "babel-loader": "7.x",
+    "babel-plugin-minify-dead-code-elimination": "0.5.0",
+    "babel-plugin-transform-class-properties": "6.x",
     "babel-plugin-transform-react-jsx": "^6.24.1",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "babel-register": "^6.26.0",
+    "babel-preset-env": "1.x",
+    "babel-preset-react": "6.x",
+    "babel-register": "6.x",
     "css-loader": "^2.1.0",
     "mocha": "4.x",
     "style-loader": "^0.23.1",
     "unit.js": "2.x",
     "url-loader": "^1.1.2",
-    "webpack": "^4.29.3"
+    "prop-types": "^15.6.0",
+    "webpack": "3.x"
   }
 }
